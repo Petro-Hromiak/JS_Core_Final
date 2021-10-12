@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 50px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(198, 218, 243);
+}
+
+.timer {
+    height: 100px;
+    color: black;
+    font-size: 70px;
+    font-family: sans-serif;
+}
+
+.all-button {
+    height: 100px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    background-color: lightseagreen;
+}
+
+.drop-drag-container {
+    width: 720px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drop, .drag {
+    width: 320px;
+    height: 320px;
+    box-shadow: 0 0 10px black;
+    background-color: lightskyblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.puzzle-1, .puzzle-2, .puzzle-3, .puzzle-4, .puzzle-5, .puzzle-6, .puzzle-7, .puzzle-8, .puzzle-9, .puzzle-10, .puzzle-11, .puzzle-12, .puzzle-13, .puzzle-14, .puzzle-15, .puzzle-16 {
+    width: 80px;
+    height: 80px;
+    background-image: url(./image/image.jpg);
+    background-size: 320px 320px;
+    overflow: hidden;
+}
+
+.puzzle-1 {
+    background-position: 0% 0%;
+}
+
+.puzzle-2 {
+    background-position: 240px 0px;
+}
+
+.puzzle-3 {
+    background-position: 160px 0px;
+}
+
+.puzzle-4 {
+    background-position: top right;
+}
+
+.puzzle-5 {
+    background-position: left 240px;
+}
+
+.puzzle-6 {
+    background-position: 240px 240px;
+}
+
+.puzzle-7 {
+    background-position: 160px 240px;
+}
+
+.puzzle-8 {
+    background-position: right 240px;
+}
+
+.puzzle-9 {
+    background-position: left 160px;
+}
+
+.puzzle-10 {
+    background-position: 240px 160px;
+}
+
+.puzzle-11 {
+    background-position: 160px 160px;
+}
+
+.puzzle-12 {
+    background-position: right 160px;
+}
+
+.puzzle-13 {
+    background-position: left 80px;
+}
+
+.puzzle-14 {
+    background-position: 240px 80px;
+}
+
+.puzzle-15 {
+    background-position: 160px 80px;
+}
+
+.puzzle-16 {
+    background-position: right 80px;
+}
+
+/* POPUP Style */
+
+.popup {
+    position: fixed;
+    width: 500px;
+    min-height: 140px;
+    background-color: lightskyblue;
+    border: 1px solid rgb(180, 180, 192);
+    top: 20%;
+    left: calc(50%-500px);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(43, 13, 72, 0.994);
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup.open .popup__content {
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    opacity: 1;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding-left: 20px; */
+    text-align: center;
+}
+
+.popup__content {
+    color: black;
+    font-size: 26px;
+    position: relative;
+    line-height: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.popup__close {
+    position: absolute;
+    right: 14px;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(180, 180, 192);
+    font-family: monospace;
+}
+
+.popup__title {
+    font-weight: bolder;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.popup__text {
+    font-style: italic;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="timer">02:00</div>
+    <div class="all-button">
+        <button class="start">Start game!</button>
+        <button class="check-result" disabled>Check result</button>
+        <button class="new">New game</button>
+    </div>
+    <div class="drop-drag-container">
+        <div class="drag sort">
+            <div class="puzzle-1 pieceDrag " id="1"></div>
+            <div class="puzzle-2 pieceDrag " id="2"></div>
+            <div class="puzzle-3 pieceDrag " id="3"></div>
+            <div class="puzzle-4 pieceDrag" id="4"></div>
+            <div class="puzzle-5 pieceDrag" id="5"></div>
+            <div class="puzzle-6 pieceDrag" id="6"></div>
+            <div class="puzzle-7 pieceDrag" id="7"></div>
+            <div class="puzzle-8 pieceDrag" id="8"></div>
+            <div class="puzzle-9 pieceDrag" id="9"></div>
+            <div class="puzzle-10 pieceDrag" id="10"></div>
+            <div class="puzzle-11 pieceDrag" id="11"></div>
+            <div class="puzzle-12 pieceDrag" id="12"></div>
+            <div class="puzzle-13 pieceDrag" id="13"></div>
+            <div class="puzzle-14 pieceDrag" id="14"></div>
+            <div class="puzzle-15 pieceDrag" id="15"></div>
+            <div class="puzzle-16 pieceDrag" id="16"></div>
+        </div>
+        <div class="drop sort">
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+
+                <div class="popup__text"></div>
+                <button class="close" onclick="closePopup(event)">Close</button>
+                <button class="check">Check</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
